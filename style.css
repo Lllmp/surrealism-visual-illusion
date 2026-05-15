@@ -1,58 +1,43 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f1ec;
-    color: #222;
-    line-height: 1.6;
-}
-
-header {
-    background: linear-gradient(135deg, #1f1f24, #4b3f72);
-    color: white;
-    padding: 70px 24px;
-    text-align: center;
-}
-
 main {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0 24px;
-}
-
-section {
-    background: white;
-    border-radius: 18px;
-    padding: 28px;
-    margin-bottom: 28px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 24px;
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 18px;
-}
-
-.card {
-    border: 1px solid #ddd;
-    border-radius: 14px;
-    overflow: hidden;
-    background: #fafafa;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 28px;
 }
 
 .card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: contain;
+  background: #f2f2f2;
+  display: block;
 }
 
 .card-content {
-    padding: 16px;
+  padding: 22px;
 }
 
-footer {
-    text-align: center;
-    padding: 30px;
-    color: #666;
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 24px auto 0;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  left: 0;
+  top: 0;
 }
